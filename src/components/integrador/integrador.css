@@ -1,0 +1,35 @@
+.error {
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.7);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.error a{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buttonOutModal {
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonOutModal:hover {
+    background-color: rgba(0, 255, 255, 0.9);
+    transition: 0.5s;
+}

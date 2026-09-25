@@ -1,1 +1,24 @@
-<p>En progreso</p>
+<h1>Ejercicio Integrador</h1>
+
+<h3>Nombre del usuario: {{saveName}}</h3>
+
+<input type="text" [formControl]="name" class="inputNameNew" #inputNameNew>
+
+<button class="saveName" (click)="changeName(inputNameNew.value)" [disabled]="modal" [disabled]="name.invalid">Guardar</button>
+
+
+
+<h1>Contador: {{count}}</h1>
+<button (click)="add()" [disabled]="modal">+</button>
+<button (click)="rest()" [disabled]="modal">-</button>
+
+@if(modal){
+    <div class="error">
+        <div >
+            <a>Error</a>
+            <a>{{error}} </a>
+            <button (click)="closeModal()" class="buttonOutModal">Salir</button>
+        </div>
+        
+    </div>
+}
